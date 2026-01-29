@@ -485,4 +485,15 @@ margin-right: 76px;
 .footer-item-link:focus {
     background-color: #31D0AA;
 }
+
+.subscribe-form {
+
+}
+
+.email-form {
+    display: flex;
+
+    justify-content:
+    max-width: 453px;
+}
 /* #endregion-footer */
