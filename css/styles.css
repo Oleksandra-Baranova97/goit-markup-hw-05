@@ -20,7 +20,9 @@ body {
     color: #434455;
     background-color: #fff;
 }
-
+body:has(.backdrop.is-open) {
+    overflow-y: hidden;
+}
 
 /* #region-header */
 /* common */
@@ -423,7 +425,7 @@ margin-right: 76px;
 
 .footer-container {
     display: flex;
-    flex-direction: row;
+    justify-content:;
     align-items: baseline; 
 }
     
@@ -455,6 +457,7 @@ margin-right: 76px;
     margin-bottom: 16px;
     display: flex;
     align-self: center;
+
 }
 .footer-list-social {
     display: flex;
@@ -479,21 +482,181 @@ margin-right: 76px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
-     fill: #f4f4fd;
+fill: #f4f4fd;
 }
 .footer-item-link:hover,
 .footer-item-link:focus {
     background-color: #31D0AA;
 }
 
+.footer-subscribe {
+display: flex; 
+flex-direction: column;
+
+}
+
+.article-subscribe{
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;        
+}
 .subscribe-form {
-
-}
-
-.email-form {
     display: flex;
-
-    justify-content:
-    max-width: 453px;
+    align-items: center;
+    gap: 24px;
 }
+.subscribe-label {
+
+}
+
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    padding-left: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
 /* #endregion-footer */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(46, 47, 66, 0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition-property: opacity, visibility;
+    transform: 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in;
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+   
+
+transform: translate(-50%, -50%);
+
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fcfcfc;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.backdrop:not(.is-open) .modal {
+    transform: translate(-50%, -100%);
+
+}
+
+.modal-close-btn {
+    position: absolute;
+    border-radius: 100%;
+    top: 19px;
+    right: 24px;
+    fill:#e7e9fc;
+    margin-bottom: 24px;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close {
+    color: #2e2f42;
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404bbf;
+}
+.icon-close:hover,
+.icon-close:focus {
+    color: #fff;
+}
+
+.modal-slogan {
+    padding-top: 67px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+/* region modal form */
+.callback-form {
+    
+    
+
+}
+.callback-wrapper {
+    margin-bottom: 8px;
+}
+.callback-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+.userName {}
+.callback-field {
+    position: relative;
+}
+.callback-input {
+    display: inline-block;
+    width: 100%;
+    padding: 29px 38px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.callback-input:focus,
+.callback-input:hover {
+    border-color: #4d5ae5; 
+}
+
+.callback-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.callback-icon:hover,
+.callback-icon:focus {
+    fill: #4d5ae5;
+}
+/* end region modal form */
