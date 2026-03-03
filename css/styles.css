@@ -669,11 +669,17 @@ transform: translate(-50%, -50%);
     border-radius: 4px;
     resize: none;
     outline: none;
-  padding: 24px 24px;
     font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
+    padding: 8px 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.callback-comment::placeholder {
     color: rgba(46, 47, 66, 0.4);
 }
+
+.callback-comment:focus,
+.callback-comment:hover {
+    border-color: #4d5ae5;}
 
 /* end region modal form */
