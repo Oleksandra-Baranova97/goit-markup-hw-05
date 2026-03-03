@@ -530,7 +530,7 @@
           </svg>
         </button>
         <p class="modal-slogan">Leave your contacts and we will call you back</p>
-        <form class="callback-form" name="callback" autocomplete="off"></form>
+        <form class="callback-form" name="callback" autocomplete="off">
      <div class="callback-wrapper">
       <label class="callback-label" for="user-name">Name</label>
      <div class="callback-field">
@@ -588,6 +588,24 @@
     </textarea>
     </div>
     </div>
-    </div>
+
+    <label class="callback-agreement">
+      <input 
+      type="checkbox" 
+      name="user-agreement" 
+      id="user-agreement" 
+      value="true" checked
+      />
+      <span class="callback-toggler">
+        <svg class="callback-toggler-icon" width="16" height="16">
+          <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </span>
+      I accept the terms and conditions of the 
+      <a class="callback-link" href="#">Privacy Policy</a>
+    </label>
+  </form>
+  </div>
+  </div>
   </body>
 </html> 
