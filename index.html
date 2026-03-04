@@ -589,22 +589,26 @@
     </div>
     </div>
 
-    <label class="callback-agreement">
+   <div class="checkbox-field">
       <input 
+      class="ckeckbox-input visually-hidden"
       type="checkbox" 
       name="user-agreement" 
       id="user-agreement" 
-      value="true" checked
+      value="true"
       />
+      <label class="callback-agreement" for="user-agreement">
       <span class="callback-toggler">
-        <svg class="callback-toggler-icon" width="16" height="16">
+        <svg class="callback-toggler-icon" width="10" height="8">
           <use href="./images/icons.svg#icon-vector"></use>
         </svg>
       </span>
       I accept the terms and conditions of the 
       <a class="callback-link" href="#">Privacy Policy</a>
     </label>
-  </form>
+  </div>
+  <button class="button" type="submit">Send</button>
+</form>
   </div>
   </div>
   </body>

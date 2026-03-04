@@ -682,7 +682,37 @@ transform: translate(-50%, -50%);
 
 /* Custom checkbox */
 
+.ckeckbox-input {
+    margin-bottom: 24px;
+}
 .callback-agreement {
     display: block;
     margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+.callback-toggler {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    fill: transparent;
+}
+.callback-link {
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.ckeckbox-input:checked + .callback-agreement > .callback-toggler {
+    background-color: #404bbf;
+    fill: #f4f4fd;
+    border: none;
 }
