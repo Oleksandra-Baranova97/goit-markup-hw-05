@@ -501,27 +501,29 @@
         </div>
       <div class="footer-subscribe">
         <p class="article-subscribe">Subscribe</p>
-        <form class="footer-form">
+        <form class="footer-form" name="subscribe">
           <label class="footer-form-label">
             <input
               class="footer-form-field"
               type="email"
-              name="email_adress"
+              name="subscribe-form"
               placeholder="E-mail"
             />
           </label>
           <button clas="btn-subscribe" type="submit">
             Subscribe
-            <svg class="email-icon" width="24" height="24">
+            <span class="btn-icon">
+            <svg class="icon-send" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
+            </span>
           </button>
         </form>
       </div>
     </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <!-- <div class="backdrop is-open"> -->
       <div class="modal">
         <button class="modal-close-btn" type="button" aria-label="Close modal button">
           <svg class="icon-close" width="8px" height="8px">
