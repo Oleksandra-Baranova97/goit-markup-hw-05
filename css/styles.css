@@ -531,37 +531,13 @@ fill: #f4f4fd;
     flex-basis: 264px;
 }
 
-.footer-btn {
-    
-    
-}
-
 .btn-subscribe {
-
-    display: inline-flex;
-    align-items: center;
-    gap: 16px;
     padding: 8px 24px;
-    height: 40px; 
-    width: 165px;
     border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-    margin-right: 16px;
-    background-color: #4d5ae5;
-    
+    height: 40px;
+    width: 165px;
 }
 
-.btn-subscribe .btn-icon {
-
-
-
-
-}
 
 /* #endregion-footer */
 
