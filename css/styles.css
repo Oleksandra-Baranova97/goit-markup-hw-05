@@ -495,7 +495,7 @@ fill: #f4f4fd;
 /* fotter form */
 
 .footer-subscribe {
-    margin-left: 80px;
+    margin-left: auto;
     max-width: 453px;
     width: 100%;
 
@@ -629,21 +629,23 @@ fill: #f4f4fd;
 .modal-close-btn {
     width: 24px;
     height: 24px;
-    position: absolute;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    
-    top: 19px;
+    border-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 24px;
     right: 24px;
     background-color:#e7e9fc;
-    margin-bottom: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
+
+
 .icon-close {
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn:hover
+
+.modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404bbf;
     border: none;
@@ -665,6 +667,7 @@ fill: #f4f4fd;
     color: #2e2f42;
 }
 /* region modal form */
+
 .callback-form {
     padding-left: 24px;
     padding-right: 24px;
